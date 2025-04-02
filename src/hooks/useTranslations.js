@@ -4,7 +4,7 @@ import translations from '../../langues.json';
 export const useTranslations = () => {
   const [lang, setLang] = useState(() => {
     const savedLang = localStorage.getItem('language');
-    return savedLang || 'fr';
+    return savedLang || 'en';
   });
 
   const toggleLanguage = useCallback((newLang) => {

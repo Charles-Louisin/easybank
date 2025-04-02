@@ -49,7 +49,7 @@ const Hero = ({ lang, translations }) => {
               <div
                 className="absolute inset-0 bg-no-repeat bg-cover z-20 dark:opacity-80 transition-opacity duration-300"
                 style={{
-                  backgroundImage: 'url(/public/images/bg-intro-desktop.svg)',
+                  backgroundImage: 'url(/images/bg-intro-desktop.svg)',
                   backgroundPosition: 'left center',
                   backgroundSize: '137% 180%'
                 }}
