@@ -24,7 +24,7 @@ const Hero = ({ lang, translations }) => {
           </div>
         </div>
 
-        <div className="px-5 text-center pb-20 pt-8">
+        <div className="px-5 text-center pb-40 sm:pb-32 pt-8">
           <h1 className="text-4xl font-public-sans font-light text-dark-blue dark:text-white mb-6 transition-colors duration-300">
             {translations[lang].hero.title}
           </h1>
