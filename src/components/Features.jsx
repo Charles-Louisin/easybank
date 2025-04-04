@@ -6,7 +6,7 @@ import iconApi from '/images/icon-api.svg';
 
 const Features = ({ lang, translations }) => {
   return (
-    <section className="py-16 md:py-24 bg-light-grayish-blue dark:bg-dark-blue-800 transition-colors duration-300">
+    <section className="py-16 md:py-24 dark:bg-dark-blue-800 transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="text-center md:text-left mb-12 w-full md:w-128 mx-auto md:mx-0 ">
           <h2 className="text-3xl md:text-4xl font-public-sans font-light text-dark-blue dark:text-white mb-5">

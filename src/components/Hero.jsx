@@ -6,7 +6,7 @@ const Hero = ({ lang, translations }) => {
     <section className="relative overflow-hidden bg-white dark:bg-dark-blue-900 transition-colors duration-300">
       {/* Mobile version */}
       <div className="md:hidden">
-        <div className="absolute w-full overflow-hidden">
+        <div className="absolute h-[55vh] w-full overflow-hidden">
           <img
             src={bgMobile}
             alt=""
@@ -24,7 +24,7 @@ const Hero = ({ lang, translations }) => {
           </div>
         </div>
 
-        <div className="px-5 text-center pb-40 sm:pb-32 pt-8">
+        <div className="px-5 text-center pb-20 sm:pb-32 pt-20">
           <h1 className="text-4xl font-public-sans font-light text-dark-blue dark:text-white mb-6 transition-colors duration-300">
             {translations[lang].hero.title}
           </h1>

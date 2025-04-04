@@ -32,7 +32,7 @@ const Navbar = ({ lang, translations, onLanguageChange }) => {
 
   return (
     <nav className="relative bg-white dark:bg-dark-blue z-50 transition-colors duration-300">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-0 md:px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img src={logo} alt="Easybank" className="h-5 dark:filter dark:brightness-0 dark:invert" />
