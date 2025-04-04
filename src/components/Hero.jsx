@@ -3,7 +3,7 @@ import bgMobile from '/images/bg-intro-mobile.svg';
 
 const Hero = ({ lang, translations }) => {
   return (
-    <section className="relative overflow-hidden bg-white dark:bg-dark-blue-900 transition-colors duration-300">
+    <section className="relative overflow-visible bg-white dark:bg-dark-blue-900 transition-colors duration-300">
       {/* Mobile version */}
       <div className="md:hidden">
         <div className="absolute h-[55vh] w-full overflow-hidden">
