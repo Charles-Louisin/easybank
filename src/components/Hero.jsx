@@ -3,25 +3,37 @@ import bgMobile from '/images/bg-intro-mobile.svg';
 
 const Hero = ({ lang, translations }) => {
   return (
-    <section className="relative overflow-visible bg-white dark:bg-dark-blue-900 transition-colors duration-300">
+    <section className="relative overflow-hidden bg-white dark:bg-dark-blue-900 transition-colors duration-300">
       {/* Mobile version */}
       <div className="md:hidden">
-        <div className="absolute w-full h-[49%] overflow-hidden">
+        <div className="absolute w-full overflow-hidden">
           <img
             src={bgMobile}
             alt=""
-            className="w-[85%] absolute top-0 left-0 transform scale-[1.5] translate-y-[-8%] dark:opacity-80"
+            className="w-full h-auto object-cover transform scale-[1.5] translate-y-[-15%] dark:opacity-80"
           />
         </div>
 
-        <div className="w-full">
-          <div className="relative w-full h-[380px]">
+        <div className="relative w-full">
+          <div className="relative w-full h-[420px]">
             <img
               src={mockups}
               alt="Mobile mockups"
-              className="absolute w-[100%] top-[-120px] left-[50%] transform translate-x-[-50%] dark:brightness-90"
+              className="absolute w-[95%] max-w-[500px] top-[-90px] left-1/2 transform -translate-x-1/2 dark:brightness-90"
             />
           </div>
+        </div>
+
+        <div className="px-5 text-center pb-20 pt-8">
+          <h1 className="text-4xl font-public-sans font-light text-dark-blue dark:text-white mb-6 transition-colors duration-300">
+            {translations[lang].hero.title}
+          </h1>
+          <p className="text-grayish-blue dark:text-gray-400 text-[15px] leading-relaxed mb-8 transition-colors duration-300 max-w-[450px] mx-auto">
+            {translations[lang].hero.description}
+          </p>
+          <button className="bg-gradient-to-r from-lime-green to-bright-cyan text-white px-8 py-3 rounded-full hover:opacity-80 transition-all duration-300">
+            {translations[lang].nav.requestInvite}
+          </button>
         </div>
       </div>
 
@@ -62,19 +74,6 @@ const Hero = ({ lang, translations }) => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile content */}
-      <div className="md:hidden px-5 text-center pb-20">
-        <h1 className="text-4xl font-public-sans font-light text-dark-blue dark:text-white mb-5 transition-colors duration-300">
-          {translations[lang].hero.title}
-        </h1>
-        <p className="text-grayish-blue dark:text-gray-400 text-body mb-8 transition-colors duration-300">
-          {translations[lang].hero.description}
-        </p>
-        <button className="bg-gradient-to-r from-lime-green to-bright-cyan text-white px-8 py-3 rounded-full hover:opacity-80 transition-all duration-300">
-          {translations[lang].nav.requestInvite}
-        </button>
       </div>
     </section>
   );

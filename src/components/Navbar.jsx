@@ -32,9 +32,9 @@ const Navbar = ({ lang, translations, onLanguageChange }) => {
 
   return (
     <nav className="relative bg-white dark:bg-dark-blue z-50 transition-colors duration-300">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-0 py-6 md:py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <div className="flex items-center pl-2 md:pl-0">
             <img src={logo} alt="Easybank" className="h-5 dark:filter dark:brightness-0 dark:invert" />
           </div>
 
@@ -81,13 +81,18 @@ const Navbar = ({ lang, translations, onLanguageChange }) => {
             <div className="flex space-x-4">
               <button
                 onClick={() => onLanguageChange('fr')}
-                className={`${lang === 'fr' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'}`}
+                className={`font-medium ${
+                  lang === 'fr' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'
+                } hover:text-lime-green transition-colors duration-300`}
               >
                 FR
               </button>
+              <span className="text-grayish-blue">|</span>
               <button
                 onClick={() => onLanguageChange('en')}
-                className={`${lang === 'en' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'}`}
+                className={`font-medium ${
+                  lang === 'en' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'
+                } hover:text-lime-green transition-colors duration-300`}
               >
                 EN
               </button>
@@ -99,7 +104,7 @@ const Navbar = ({ lang, translations, onLanguageChange }) => {
           </button>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden menu-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden menu-button pr-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <img src={isMenuOpen ? close : hamburger} alt="Menu" className="dark:filter dark:brightness-0 dark:invert" />
           </button>
         </div>
@@ -158,13 +163,18 @@ const Navbar = ({ lang, translations, onLanguageChange }) => {
             <div className="flex justify-center space-x-4 pt-2">
               <button
                 onClick={() => onLanguageChange('fr')}
-                className={`${lang === 'fr' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'}`}
+                className={`font-medium ${
+                  lang === 'fr' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'
+                } hover:text-lime-green transition-colors duration-300`}
               >
                 FR
               </button>
+              <span className="text-grayish-blue">|</span>
               <button
                 onClick={() => onLanguageChange('en')}
-                className={`${lang === 'en' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'}`}
+                className={`font-medium ${
+                  lang === 'en' ? 'text-dark-blue dark:text-white' : 'text-grayish-blue'
+                } hover:text-lime-green transition-colors duration-300`}
               >
                 EN
               </button>
